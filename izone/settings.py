@@ -87,7 +87,7 @@ AUTHENTICATION_BACKENDS = (
 
 # allauth需要的配置
 # 当出现"SocialApp matching query does not exist"这种报错的时候就需要更换这个ID
-SITE_ID = 4
+SITE_ID = 1
 
 # 设置登录和注册成功后重定向的页面，默认是/accounts/profile/
 LOGIN_REDIRECT_URL = "/"
@@ -95,7 +95,7 @@ LOGIN_REDIRECT_URL = "/"
 # Email setting
 # 注册中邮件验证方法:“强制（mandatory）”,“可选（optional）【默认】”或“否（none）”之一。
 # 开启邮箱验证的话，如果邮箱配置不可用会报错，所以默认关闭，根据需要自行开启
-ACCOUNT_EMAIL_VERIFICATION = os.getenv('IZONE_ACCOUNT_EMAIL_VERIFICATION', 'mandatory')
+ACCOUNT_EMAIL_VERIFICATION = os.getenv('IZONE_ACCOUNT_EMAIL_VERIFICATION', 'none')
 # 登录方式，选择用户名或者邮箱都能登录
 ACCOUNT_AUTHENTICATION_METHOD = "username_email"
 # 设置用户注册的时候必须填写邮箱地址
@@ -209,7 +209,7 @@ REST_FRAMEWORK = {
 MYSQL_HOST = os.getenv('IZONE_MYSQL_HOST', '127.0.0.1')
 MYSQL_NAME = os.getenv('IZONE_MYSQL_NAME', 'mysite')
 MYSQL_USER = os.getenv('IZONE_MYSQL_USER', 'root')
-MYSQL_PASSWORD = os.getenv('IZONE_MYSQL_PASSWORD', '2003')
+MYSQL_PASSWORD = os.getenv('IZONE_MYSQL_PASSWORD', '123456')
 MYSQL_PORT = os.getenv('IZONE_MYSQL_PORT', 3306)
 
 DATABASES = {
@@ -259,10 +259,10 @@ DEFAULT_FROM_EMAIL = os.getenv('IZONE_DEFAULT_FROM_EMAIL', 'TendCode博客 <your
 
 # 网站默认设置和上下文信息
 SITE_LOGO_NAME = os.getenv('IZONE_LOGO_NAME', 'R博客')
-SITE_END_TITLE = os.getenv('IZONE_SITE_END_TITLE', 'WANG')
-#SITE_END_TITLE = os.getenv('IZONE_SITE_END_TITLE', 'izone')
-SITE_DESCRIPTION = os.getenv('IZONE_SITE_DESCRIPTION', 'izone 是一个使用 Django+Bootstrap4 搭建的个人博客类型网站')
-SITE_KEYWORDS = os.getenv('IZONE_SITE_KEYWORDS', 'izone,Django博客,个人博客')
+SITE_END_TITLE = os.getenv('IZONE_SITE_END_TITLE', 'Rui')
+#SITE_END_TITLE = os.getenv('IZONE_SITE_END_TITLE', 'Rui')
+SITE_DESCRIPTION = os.getenv('IZONE_SITE_DESCRIPTION', '使用 Django+Bootstrap4 搭建的个人博客类型网站')
+SITE_KEYWORDS = os.getenv('IZONE_SITE_KEYWORDS', 'Rui,Django博客,个人博客')
 
 # 个性化设置，非必要信息
 # 个人 Github 地址

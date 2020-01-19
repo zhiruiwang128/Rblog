@@ -66,7 +66,7 @@ class Migration(migrations.Migration):
                 ('id', models.AutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
                 ('name', models.CharField(max_length=20, verbose_name='文章分类')),
                 ('slug', models.SlugField(unique=True)),
-                ('description', models.TextField(default='izone 是一个使用 Django+Bootstrap4 搭建的个人博客类型网站', help_text='用来作为SEO中description,长度参考SEO标准', max_length=240, verbose_name='描述')),
+                ('description', models.TextField(default='使用 Django+Bootstrap4 搭建的个人博客类型网站', help_text='用来作为SEO中description,长度参考SEO标准', max_length=240, verbose_name='描述')),
             ],
             options={
                 'verbose_name': '分类',
@@ -124,7 +124,7 @@ class Migration(migrations.Migration):
                 ('id', models.AutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
                 ('name', models.CharField(max_length=20, verbose_name='文章标签')),
                 ('slug', models.SlugField(unique=True)),
-                ('description', models.TextField(default='izone 是一个使用 Django+Bootstrap4 搭建的个人博客类型网站', help_text='用来作为SEO中description,长度参考SEO标准', max_length=240, verbose_name='描述')),
+                ('description', models.TextField(default='使用 Django+Bootstrap4 搭建的个人博客类型网站', help_text='用来作为SEO中description,长度参考SEO标准', max_length=240, verbose_name='描述')),
             ],
             options={
                 'verbose_name': '标签',
